@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prodromos Gerakios - CV</title>
+  <meta name="description" content="Senior Software Engineer at Google - CV and Resume">
+  <meta name="author" content="Prodromos Gerakios">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles for web */
+    body {
+      background: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .header-bar {
+      background: linear-gradient(135deg, #0f172a, #334155);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-bar h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #0ea5e9;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Raleway', sans-serif;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .download-btn:hover {
+      background: #0284c7;
+      transform: translateY(-2px);
+    }
+    .download-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+    .cv-content {
+      padding: 2rem 3rem;
+    }
+    .footer {
+      background: #f8fafc;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+      font-family: 'Raleway', sans-serif;
+    }
+    .footer a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    @media print {
+      .header-bar, .footer { display: none; }
+      .container { box-shadow: none; }
+      .cv-content { padding: 0; }
+    }
+    @media (max-width: 768px) {
+      .cv-content { padding: 1.5rem; }
+      .header-bar {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+    /* CV styles */
+/*
+ * ELEGANT CV STYLESHEET
+ * Sophisticated, refined design with subtle gradients
+ * Perfect balance between modern and professional
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #334155;
+  --accent-color: #0ea5e9;
+  --accent-dark: #0284c7;
+  --text-color: #334155;
+  --text-light: #64748b;
+  --border-color: #e2e8f0;
+  --bg-light: #f8fafc;
+  --highlight: #fef3c7;
+}
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10pt;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: white;
+}
+
+/* Main Title - Name */
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 36pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+}
+
+/* Section Headers */
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15pt;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 1.4rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent-color), var(--accent-dark));
+  border-radius: 2px;
+}
+
+/* Job Title / Company */
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+h3::before {
+  content: "◆";
+  color: var(--accent-color);
+  font-size: 8pt;
+  margin-right: 0.5rem;
+}
+
+/* Project Names */
+h4 {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, var(--bg-light), transparent);
+  border-radius: 3px;
+}
+
+/* Contact Info Table (first table after h1) */
+h1 + table {
+  border: none;
+  box-shadow: none;
+  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+  border-radius: 8px;
+  margin: 0.8rem 0 1.2rem 0;
+  padding: 0.5rem;
+}
+
+h1 + table th {
+  display: none;
+}
+
+h1 + table td {
+  border: none;
+  background: transparent;
+  padding: 0.3rem 0.8rem;
+  font-size: 9.5pt;
+}
+
+h1 + table td:first-child {
+  width: auto;
+  font-weight: normal;
+}
+
+h1 + table td:first-child::after {
+  display: none;
+}
+
+h1 + table tr:nth-child(even) {
+  background: transparent;
+}
+
+h1 + table a {
+  color: var(--accent-dark);
+}
+
+h1 + table strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 0.5rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.3rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.35rem;
+  text-align: justify;
+  position: relative;
+  padding-left: 0.8rem;
+}
+
+li::before {
+  content: "›";
+  position: absolute;
+  left: -0.8rem;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+/* Nested lists */
+ul ul {
+  margin-top: 0.25rem;
+  margin-left: 0.8rem;
+}
+
+ul ul li::before {
+  content: "–";
+  font-size: 10pt;
+  color: var(--text-light);
+}
+
+/* Strong/Bold Text */
+strong {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Italic - dates, etc */
+em {
+  font-style: italic;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+/* Links */
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: 1.2rem 0;
+}
+
+/* Tables - Skills Section */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+  font-size: 9.5pt;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+th {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:nth-child(even) {
+  background: var(--bg-light);
+}
+
+td:first-child {
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 26%;
+  position: relative;
+}
+
+td:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--accent-color), transparent);
+}
+
+/* Technologies styling */
+p:has(strong:first-child) {
+  background: var(--bg-light);
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  font-size: 9pt;
+  margin-top: 0.5rem;
+}
+
+/* Page break control */
+h2, h3, h4 {
+  page-break-after: avoid;
+}
+
+ul, ol, table {
+  page-break-inside: avoid;
+}
+
+/* Print optimizations */
+@media print {
+  body {
+    font-size: 10pt;
+  }
+
+  h1::after,
+  h2::before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .contact-info {
+    background: var(--bg-light) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  th {
+    background: var(--primary-color) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-bar">
+      <h1>Prodromos Gerakios</h1>
+      <a href="CV_pgerakios.pdf" class="download-btn" download>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        Download PDF
+      </a>
+    </div>
+    <div class="cv-content">
+<h1 id="prodromos-gerakios">Prodromos Gerakios</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Location:</strong> Zurich,
+Switzerland</td>
+<td style="text-align: right;"><strong>LinkedIn:</strong> <a
+href="https://www.linkedin.com/in/pgerakios">pgerakios</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Email:</strong>
+prodromos.gerakios@gmail.com</td>
+<td style="text-align: right;"><strong>GitHub:</strong> <a
+href="https://github.com/pgerakios">pgerakios</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Phone:</strong> +41 076 608
+5060</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Senior Software Engineer with over 15 years of experience
+specializing in high-scale distributed systems, secure cloud
+infrastructure, and AI/ML applications. Proven success in delivering
+mission-critical systems across Search, Financial Services, and Contact
+Center AI, consistently achieving over <strong>99.99% uptime</strong>.
+Deep expertise in architecting real-time fraud detection systems
+handling over <strong>1,000 QPS</strong> with <strong>sub-20ms
+latency</strong> and driving infrastructure optimizations that have
+saved over <strong>30%</strong> in resource consumption. A track record
+of leading complex, cross-functional projects that have resulted in
+<strong>8x</strong> improvements in development velocity.</p>
+<hr />
+<h2 id="key-achievements">Key Achievements</h2>
+<ul>
+<li>Architected a real-time fraud prediction system processing
+<strong>1,000+ QPS</strong> at a <strong>sub-20ms latency</strong>,
+which contributed to a significant reduction in fraudulent transactions
+for major financial institutions..</li>
+<li>Led the re-architecture of Google Search’s batch data processing
+pipelines, achieving a <strong>30% reduction in cloud costs</strong>
+(GCU/RAM), saving the equivalent of <strong>1.5 employee
+salaries</strong> annually. Secured the PII of large enterprise
+customers by leading the VPC-SC security implementation for 10+ services
+on Google’s Contact Center AI Platform..</li>
+<li>Optimized a distributed scheduling algorithm at Workday, resulting
+in an <strong>80% improvement</strong> in job execution time and a
+<strong>5x increase</strong> in throughput.</li>
+<li>Accelerated test automation development by <strong>8x</strong> by
+creating a DSL and AI-based code generation framework, reducing manual
+QA effort by over <strong>70%</strong>.</li>
+<li>Published <strong>15 peer-reviewed papers</strong> in top-tier
+conferences and journals, including OOPSLA and Science of Computer
+Programming.</li>
+</ul>
+<hr />
+<h2 id="work-experience">Work Experience</h2>
+<h3 id="senior-software-engineer">Senior Software Engineer</h3>
+<p><strong>Google, Zurich, Switzerland</strong> <em>July 2018 –
+Present</em></p>
+<ul>
+<li>Directed a team of <strong>4 engineers</strong> to build a
+deterministic test code generation framework, accelerating test
+development time by <strong>8x</strong> for <strong>20+
+developers</strong>.</li>
+<li>Engineered a real-time voice authentication integration with
+<strong>sub-500ms latency</strong>, managing bidirectional voice streams
+across <strong>5</strong> internal and external stakeholder teams.</li>
+<li>Secured sensitive platform resources by implementing VPC Service
+Controls for <strong>10+ services</strong>, ensuring <strong>100%
+security compliance</strong> for enterprise customers.</li>
+<li>Enabled instant transaction assessments for <strong>3</strong> major
+card providers by engineering a real-time fraud prediction service with
+<strong>sub-20ms latency</strong> and <strong>1,000 QPS</strong>.</li>
+<li>Improved feature aggregation speed by <strong>40%</strong> and
+reduced data retrieval bottlenecks by <strong>60%</strong> by pioneering
+an “Active MemCache” architecture.</li>
+<li>Achieved a <strong>30% reduction</strong> in GCU/RAM consumption by
+optimizing batch pipelines for knowledge panel systems.</li>
+<li>Improved sensitive entity alias precision by <strong>15%</strong>,
+impacting over <strong>1 billion</strong> Google Search queries
+daily.</li>
+</ul>
+<p><strong>Technologies:</strong> Golang, Java, C++, GCP (GKE, BigQuery,
+Dataflow, Spanner, Vertex AI), Borg, MLOps, Kubeflow, gRPC, VPC-SC,
+Terraform</p>
+<h3 id="software-development-engineer-iii">Software Development Engineer
+III</h3>
+<p><strong>Workday, Dublin, Ireland</strong> <em>May 2016 – June
+2018</em></p>
+<ul>
+<li>Improved job execution time by <strong>80%</strong> and increased
+throughput by <strong>5x</strong> by redesigning a distributed
+scheduling algorithm for the Cloud Master service, enabling faster
+processing for over <strong>1,000 tenants</strong>.</li>
+<li>Ensured <strong>100% continuous availability</strong> for a
+scheduler handling <strong>10,000+</strong> daily jobs by engineering a
+worker pool draining mechanism for Zero-Downtime-Deployment.</li>
+<li>Maintained <strong>99.99% uptime</strong> by owning the complete
+monitoring, alerting, and build pipeline for the core job scheduler,
+serving over <strong>200</strong> internal developers.</li>
+</ul>
+<p><strong>Technologies:</strong> Scala, Akka (clustering, remoting),
+Zookeeper, Kafka, Java 8, Spring, Hibernate, MySQL</p>
+<h3 id="software-engineer">Software Engineer</h3>
+<p><strong>Advantage Financial Systems, Dublin, Ireland</strong>
+<em>June 2015 – April 2016</em></p>
+<ul>
+<li>Developed a full-stack Banking-as-a-Service (BaaS) platform for
+<strong>2</strong> UK banks, securely handling over <strong>10,000
+customer accounts</strong> and a portfolio over <strong>£5
+million</strong>.</li>
+<li>Engineered <strong>4</strong> core banking modules for security and
+encryption, reducing transaction fraud risk by over
+<strong>20%</strong>.</li>
+</ul>
+<p><strong>Technologies:</strong> JEE7, Java 7, AngularJS, PostgreSQL,
+WildFly, Infinispan</p>
+<h3 id="software-engineer-1">Software Engineer</h3>
+<p><strong>Cognity, Athens, Greece</strong> <em>March 2014 – February
+2015</em></p>
+<ul>
+<li>Built high-traffic e-commerce platforms for <strong>2</strong> major
+telecom providers supporting over <strong>1 million</strong> daily page
+views.</li>
+<li>Increased checkout conversions by <strong>5%</strong> by integrating
+<strong>3</strong> new payment gateways.</li>
+</ul>
+<p><strong>Technologies:</strong> JEE6, Oracle ATG, WebLogic, Oracle
+11</p>
+<h3 id="senior-researcher">Senior Researcher</h3>
+<p><strong>University of Athens (MorphPL Project), Athens,
+Greece</strong> <em>December 2012 – March 2014</em></p>
+<ul>
+<li>Developed <strong>2</strong> novel Java compilers (MorphJ, DelphJ),
+with findings published at <strong>3</strong> top-tier international
+conferences (OOPSLA, GPCE).</li>
+</ul>
+<p><strong>Technologies:</strong> Java, Compilers, Metaprogramming</p>
+<h3 id="software-engineer-2">Software Engineer</h3>
+<p><strong>GRNET (Greek Research Network), Athens, Greece</strong>
+<em>May 2012 – December 2012</em></p>
+<ul>
+<li>Architected the “Aquarium” billing backend for the Okeanos Cloud
+IaaS, processing usage data for <strong>500+ cloud projects</strong> and
+generating over <strong>€100k</strong> in annual revenue.</li>
+</ul>
+<p><strong>Technologies:</strong> Python, Scala, Akka, MongoDB,
+RabbitMQ</p>
+<h3 id="software-engineer-3">Software Engineer</h3>
+<p><strong>Hellenic Army, Computer Support Center, Athens,
+Greece</strong> <em>September 2011 – May 2012</em></p>
+<ul>
+<li>Reduced record-keeping errors by <strong>15%</strong> by developing
+a Human Resources application for <strong>500+ personnel</strong> during
+obligatory <strong>9-month</strong> service.</li>
+</ul>
+<p><strong>Technologies:</strong> Java, Swing, JBoss, Oracle</p>
+<h3 id="software-engineer-4">Software Engineer</h3>
+<p><strong>GRNET (Greek Research Network), Athens, Greece</strong>
+<em>November 2006 – May 2009</em></p>
+<ul>
+<li>Contributed to <strong>2</strong> European research projects
+(GridCC, Geant/PerfSONAR) used by over <strong>50 research
+institutions</strong> across Europe.</li>
+</ul>
+<p><strong>Technologies:</strong> Java, C++, JSP, Tomcat</p>
+<hr />
+<h2 id="technical-skills">Technical Skills</h2>
+<h3 id="expert-5-years-of-production-experience">Expert (5+ years of
+production experience)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Technologies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Languages</strong></td>
+<td style="text-align: left;">Java, Golang, C++, Python, Scala</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cloud &amp;
+Platforms</strong></td>
+<td style="text-align: left;">Google Cloud Platform (GCP), Kubernetes,
+Borg, Docker</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Architecture</strong></td>
+<td style="text-align: left;">Distributed Systems, Microservices,
+Event-Driven Architecture, API Design</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Databases</strong></td>
+<td style="text-align: left;">BigQuery, PostgreSQL, MySQL</td>
+</tr>
+</tbody>
+</table>
+<h3 id="proficient-2-5-years-of-experience">Proficient (2-5 years of
+experience)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Technologies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Infrastructure</strong></td>
+<td style="text-align: left;">Terraform, Jenkins, GKE, Istio</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Messaging</strong></td>
+<td style="text-align: left;">Kafka, RabbitMQ, gRPC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ML/AI</strong></td>
+<td style="text-align: left;">MLOps, Kubeflow, Vertex AI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Databases</strong></td>
+<td style="text-align: left;">Cloud Spanner, MongoDB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="familiar-1-2-years-or-non-production-experience">Familiar (1-2
+years or non-production experience)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Technologies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Languages</strong></td>
+<td style="text-align: left;">Kotlin, JavaScript</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Frameworks</strong></td>
+<td style="text-align: left;">Spring, Hibernate, Akka, AngularJS</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="education">Education</h2>
+<h3 id="phd-in-computer-science">PhD in Computer Science</h3>
+<p><strong>National Technical University of Athens</strong> <em>2007 –
+2012</em> - Thesis: <em>Static Safety Guarantees for Concurrent
+Programming Languages</em> - Published <strong>10+ papers</strong> at
+top ACM conferences (OOPSLA, TLDI, PLOS).</p>
+<h3 id="international-mba">International MBA</h3>
+<p><strong>Athens University of Business and Economics</strong> <em>2005
+– 2006</em></p>
+<h3 id="ba-software-engineering-first-class-with-distinction">BA
+Software Engineering (First Class with Distinction)</h3>
+<p><strong>University of Edinburgh</strong> <em>2001 – 2005</em> -
+<strong>Class Medal</strong> (Ranked <strong>1st</strong> in class)
+&amp; <strong>British Computer Society Prize</strong>.</p>
+<hr />
+<h2 id="selected-publications-15-total">Selected Publications (15
+total)</h2>
+<ul>
+<li><strong>Forsaking Inheritance: Supercharged Delegation in
+DelphJ</strong> — OOPSLA 2013</li>
+<li><strong>Static Safety Guarantees for a Low-level Multithreaded
+Language</strong> — Science of Computer Programming, 2014</li>
+<li><strong>A Type and Effect System for Deadlock Avoidance</strong> —
+TLDI 2011, ACM</li>
+<li><strong>Race-free and Memory-safe Multithreading in Cyclone</strong>
+— TLDI 2010, ACM</li>
+<li><strong>Foo: A minimal Modern OO Calculus</strong> — FTfJP 2015</li>
+</ul>
+<hr />
+<h2 id="languages">Languages</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Language</th>
+<th style="text-align: left;">Proficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Greek</strong></td>
+<td style="text-align: left;">Native</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>English</strong></td>
+<td style="text-align: left;">Fluent</td>
+</tr>
+</tbody>
+</table>
+    </div>
+    <div class="footer">
+      <p>Last updated: Januar 2026</p>
+    </div>
+  </div>
+</body>
+</html>
